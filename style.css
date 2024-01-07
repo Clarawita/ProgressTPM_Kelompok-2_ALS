@@ -1,0 +1,393 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: jost;
+}
+html{
+  font-size: 100%; /*16px*/
+  scroll-behavior: smooth;
+}
+
+body{
+  height: 500vh;
+  background-color: #000C2F;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+.regular{
+  font-weight: 500;
+}
+
+.container-navbar{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 19.5vw;
+  padding: 2.2vw 2vw;
+  position: fixed;
+  background-color: #000C2F;
+  z-index: 2;
+  /* border: solid; */
+}
+
+#left-section-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#hack-nav{
+  color: white;
+  font-size: 1.3rem;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-family: krona one;
+}
+
+/* #logo-nav
+{
+  width: 70%;
+} */
+
+#right-section-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.5vw;
+}
+
+.anchor-nav {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.anchor-nav::after{
+  content: "";
+  position: absolute;
+  bottom: -0.3em;
+  height: 0.1em;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.anchor-nav:hover{
+  opacity: 0.8;
+}
+
+.anchor-nav:hover::after{
+  transform: scaleX(1);
+}
+
+#login-button{
+  background: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.6em 2em;
+  border-radius: 30px;
+  color: white;
+  border-color: white;
+  border: solid;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#login-button:hover{
+  background-color: white;
+  color: black;
+}
+
+#login-button:active{
+  opacity: 0.65;
+}
+
+.content{
+  padding-top: 10vw;
+}
+
+#cloud-2{
+  position: absolute;
+  left: 75vw;
+  top: 15vw;
+}
+
+#cloud-3{
+  position: absolute;
+  left: 30vw;
+  top: 35vw;
+}
+
+#logo-content
+{
+  position: absolute;
+  width: 40%;
+  top: 13.88vw;
+  left: 11.8vw;
+}
+
+#astronaut-content{
+  position: absolute;
+  width: 42vw;
+  top: 9.72vw;
+  right: 4.86vw;
+}
+
+.heading-1
+{
+  position: absolute;
+  /* font-size: 2rem; */
+  color: white;
+  display: flex;
+  top: 26.38vw;
+  position: absolute;
+  left: 11.8vw;
+  font-weight: 600;
+  font-size: 4.4rem;
+  width: 41.66vw;
+  word-wrap: break-word;
+  line-height: 4.72vw;
+}
+
+.heading-2
+{
+  position: absolute;
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  top: 36.8vw;
+  left: 11.8vw;
+}
+
+#Learn-button
+{
+  background-image: linear-gradient(to right,rgb(140, 110, 247),rgb(225, 138, 225));
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.7em 1.9em;
+  color: white;
+  top: 40.97vw;
+  left: 11.8vw;
+  border-radius: 35px;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#Learn-button:hover{
+  color: black;
+}
+
+#Learn-button:active{
+  opacity: 0.7;
+}
+
+#about{
+  margin-top: 590px;
+}
+
+.title
+{
+  position: absolute;
+  /* font-size: 2rem; */
+  color: white;
+  display: flex;
+  top: 69.44vw;
+  position: absolute;
+  left: 11.8vw;
+  font-weight: 700;
+  font-size: 4.4rem;
+  width: 41.66vw;
+  word-wrap: break-word;
+  line-height: 4.6vw;
+}
+
+#logo-info
+{
+  position: absolute;
+  left: 39vw;
+  top: 67.5vw;
+  width: 27.77vw;
+}
+
+.subhead2
+{
+  position: absolute;
+  color: white;
+  display: flex;
+  top: 76.1vw;
+  position: absolute;
+  left: 11.8vw;
+  font-weight: 400;
+  font-size: 2.3rem;
+  width: 55.55vw;
+  word-wrap: break-word;
+  line-height: 4.6vw;
+  font-family: krona one;
+}
+
+#Astro
+{
+  position: absolute;
+  right: 13.8vw;
+  width: 22vw;
+  top: 71.8vw;
+}
+
+.desc
+{
+  position: absolute;
+  color: white;
+  display: flex;
+  top: 83.1vw;
+  left: 11.8vw;
+  font-size: 1.8rem;
+  width: 41.66vw;
+}
+
+.mission
+{
+  position: absolute;
+  color: white;
+  display: flex;
+  top: 104vw;
+  left: 11.8vw;
+  font-size: 1.8rem;
+  width: 41.66vw;
+}
+
+#Register
+{
+  background-image: linear-gradient(to right,rgb(140, 110, 247),rgb(225, 138, 225));
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.7em 1.9em;
+  color: white;
+  top: 113vw;
+  left: 11.8vw;
+  border-radius: 35px;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#Register:hover
+{
+  color: black;
+}
+
+#Register:active{
+  opacity: 0.7;
+}
+
+#Download
+{
+  position: absolute;
+  background: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0.7em 1.8em;
+  border-radius: 35px;
+  color: white;
+  border-color: white;
+  border: solid;
+  transition: all 0.2s;
+  cursor: pointer;
+  left: 27.77vw;
+  top: 113vw;
+  transition: all 0.2s;
+}
+
+#Download:hover{
+  background-color: white;
+  color: black;
+}
+
+#Download:active{
+  opacity: 0.7;
+}
+
+#cloud-4{
+  position: absolute;
+  top: 147vw;
+  left: 5vw;
+}
+
+#cloud-5{
+  position: absolute;
+  top: 172vw;
+  left: 30vw;
+}
+
+#cloud-6{
+  position: absolute;
+  top: 159vw;
+  left: 68vw;
+}
+
+.join-header{
+  position: absolute;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: white;
+  top: 130vw;
+  left: 48vw;
+  line-height: 5.2vw;
+  text-align: right;
+}
+
+#astro-3{
+  position: absolute;
+  width: 37%;
+  top: 150vw;
+  left: 53vw;
+}
+
+.benefit{
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: rgb(33, 33, 46);
+  gap: 2vw;
+  padding: 0.7em 3em 0.7em 1em;
+  border-radius: 8px;
+}
+
+.skill{
+  top: 143vw;
+  left: 25vw;
+}
+
+.learning{
+  top: 154.5vw;
+  left: 17vw;
+}
+
+.network{
+  top: 166vw;
+  left: 9vw;
+}
+
+.recognition{
+  top: 176.5vw;
+  left: 17vw;
+}
+
+.resume{
+  top: 188vw;
+  left: 25vw;
+}
